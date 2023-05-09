@@ -1,2 +1,35 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+Console.WriteLine("Este programa es un juego que consiste adivinar un número del 1 al 15.");
+int numerocorrecto = new Random().Next(1, 15); // Genera un número aleatorio entre 1 y 15
+int intentosRestantes = 3;
+
+while (intentosRestantes > 0)
+{
+    Console.Write("Vas a tener 3 intentos,!TEN CUIDADO¡");
+    Console.Write("Por favor introduce un número del 1 al 15:");
+    int respuesta = Convert.ToInt32(Console.ReadLine());
+
+    if (respuesta == numerocorrecto)
+    {
+        Console.WriteLine("Bien hecho, lo lograste.");
+        break;
+    }
+    else if (respuesta < numerocorrecto)
+    {
+        Console.WriteLine("Vaya ese no es, el que buscas es mayor.");
+    }
+    else
+    {
+        Console.WriteLine("Vaya ese no es, el que buscas es menor.");
+    }
+
+    intentosRestantes--;
+    if (intentosRestantes > 0)
+    {
+        Console.WriteLine("Cuidao {intentosRestantes} intentos.");
+    }
+    else
+    {
+        Console.WriteLine("¡Has perdido! El número correcto era " + numerocorrecto);
+    }
+}
