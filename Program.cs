@@ -25,7 +25,7 @@ while (intentosrestantes > 0)
     intentosrestantes--;
     if (intentosrestantes > 0)
     {
-        Console.WriteLine("Cuidao te quedan {intentosrestantes} intentos.");
+        Console.WriteLine($"Cuidao te quedan {intentosrestantes} intentos.");
     }
     else
     {
