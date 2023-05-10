@@ -2,7 +2,7 @@
 Console.WriteLine("Este programa es un juego que consiste adivinar un número del 1 al 15.");
 int numerocorrecto = new Random().Next(1, 15); // Genera un número aleatorio entre 1 y 15
 int intentosrestantes = 3;
-    Console.Write("Vas a tener 3 intentos,¡TEN CUIDADO!.");
+    Console.WriteLine("Vas a tener 3 intentos,¡TEN CUIDADO!.");
 while (intentosrestantes > 0)
 {
     Console.Write("Por favor introduce un número del 1 al 15:");
