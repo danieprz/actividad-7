@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Este programa es un juego que consiste adivinar un número del 1 al 15.");
+Console.WriteLine("Este programa es un juego que consiste en adivinar un número del 1 al 15.");
 int numerocorrecto = new Random().Next(1, 15); // Genera un número aleatorio entre 1 y 15
 int intentosrestantes = 3;
     Console.WriteLine("Vas a tener 3 intentos,¡TEN CUIDADO!.");
